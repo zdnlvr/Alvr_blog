@@ -1,0 +1,315 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7DCDB; /* Background color */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Admin Dashboard Styles */
+.admin-container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #A86464; /* Sidebar color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.sidebar .site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F7DCDB; /* Text color */
+    margin: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 15px;
+    background-color: #A86464; /* Default link color */
+    color: #ffffff;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a .icon {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #C8000C; /* Active and hover link color */
+}
+
+.logout-section {
+    margin-top: auto; /* Push logout to the bottom */
+    text-align: center;
+    padding: 72px;
+}
+
+.logout-section a {
+    display: block;
+    padding: 15px;
+    background-color: #C8000C; /* Logout button color */
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.logout-section a:hover {
+    background-color: #A86464;
+}
+
+.logout-section p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.admin-main {
+    margin-left: 260px; /* Adjust left margin for sidebar */
+    padding: 62px;
+    width: calc(100% - 260px); /* Adjust width for sidebar */
+    background-color: #F7DCDB;
+}
+
+.admin-main h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #C8000C;
+}
+
+.admin-main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #A86464;
+}
+
+.article-section {
+    background-color: #A86464; /* Article section background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.article-section .article-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.article-section .article-card p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.article-section .article-card .btn {
+    background: #C8000C; /* Button background color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.article-section .article-card .btn:hover {
+    background: #A86464;
+}
+
+.creation-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #C8000C;
+}
+
+.creation-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #A86464;
+}
+
+.creation-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Adjust gap between buttons */
+}
+
+.creation-buttons .btn {
+    background: #C8000C; /* Button background color */
+    color: #fff;
+    padding: 20px 40px; /* Add padding to buttons */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.creation-buttons .btn:hover {
+    background: #A86464;
+}
+
+.creation-buttons .btn i {
+    margin-right: 10px;
+}
+
+.form-container {
+    background-color: #A86464; /* Form background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.form-container input, .form-container textarea, .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #C8000C; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #9CB2BF;
+}
+
+.message {
+    background-color: #C8000C; /* Message background color */
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none; /* Default hidden */
+}
+
+/* Style for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #A86464; /* Table header background color */
+    color: white;
+}
+
+td img {
+    max-width: 100px;
+    height: auto;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+    flex: 1;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #28a745; /* Green */
+}
+
+.btn-edit:hover {
+    background-color: #218838; /* Darker green */
+}
+
+.btn-delete {
+    background-color: #C8000C; /* Red */
+}
+
+.btn-delete:hover {
+    background-color: #A86464; /* Darker red */
+}
